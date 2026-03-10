@@ -27,10 +27,10 @@ filtros.forEach(filtro => {
 const fondo = document.querySelector(".fondo-galeria");
 
 const imagenes = [
-    "Fondos/Fondo1.jpg",
-    "Fondos/Fondo2.jpg",
-    "Fondos/Fondo3.jpg",
-    "Fondos/Fondo4.jpg"
+    "Fondos/Fondo-1.jpg",
+    "Fondos/Fondo-2.jpg",
+    "Fondos/Fondo-3.jpg",
+    "Fondos/Fondo-4.jpg"
 ];
 
 let indice = 0;
@@ -48,3 +48,4 @@ setInterval(() => {
     }, 1000);
 
 }, 7000);
+
