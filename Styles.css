@@ -1,0 +1,299 @@
+/* =========================
+   RESET GENERAL
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   FONDO GALERÍA (IMÁGENES)
+========================= */
+.fondo-galeria {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: opacity 1.2s ease-in-out;
+}
+
+/* Capa para mejorar legibilidad */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.45);
+    z-index: -1;
+}
+
+/* =========================
+   BASE GENERAL
+========================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* =========================
+   TIPOGRAFÍA
+========================= */
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    font-size: 2.6rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+}
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #006d77;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #0a9396;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+nav a:hover::after {
+    width: 70%;
+}
+
+/* =========================
+   MAIN
+========================= */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+/* =========================
+   INICIO
+========================= */
+#inicio h2 {
+    font-size: 2.8rem;
+}
+
+#inicio p {
+    max-width: 720px;
+    margin: 1rem auto;
+    line-height: 1.8;
+}
+
+/* =========================
+   CATÁLOGO
+========================= */
+#catalogo h2 {
+    font-size: 2.4rem;
+}
+
+/* =========================
+   FILTROS
+========================= */
+.filtros ul {
+    list-style: none;
+    margin: 1.5rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.filtros li {
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 6px;
+    font-weight: 500;
+    color: #005f73;
+}
+
+.filtros li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #0a9396;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+.filtros li:hover::after {
+    width: 70%;
+}
+
+/* =========================
+   GRID DE PRODUCTOS
+========================= */
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.8rem;
+    justify-items: center;
+}
+
+.productos h3 {
+    grid-column: 1 / -1;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* =========================
+   TARJETAS DE PRODUCTO
+========================= */
+article {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 22px;
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    padding-bottom: 1.8rem;
+    position: relative;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   IMAGEN DEL PRODUCTO
+========================= */
+.img-producto,
+.img-Zaif,
+.img-Tesoro,
+.img-Mariposa {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-producto img,
+.img-Zaif img,
+.img-Tesoro img,
+.img-Mariposa img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.45s ease;
+}
+
+/* HOVER SOLO ZOOM (SIN BLUR NI TRANSPARENCIA) */
+article:hover img {
+    transform: scale(1.12);
+}
+
+/* =========================
+   TEXTO TARJETA
+========================= */
+article h4 {
+    margin-top: 1.5rem;
+    color: #005f73;
+}
+
+article p {
+    margin: 0.4rem 1.4rem;
+    line-height: 1.6;
+}
+
+/* =========================
+   CONTACTO
+========================= */
+#contacto ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+#contacto li {
+    margin: 0.5rem 0;
+    position: relative;
+    cursor: pointer;
+}
+
+#contacto a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#contacto li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background: #0a9396;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+#contacto li:hover::after {
+    width: 60%;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: rgba(255, 255, 255, 0.65);
+    padding: 1.8rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.9rem;
+    }
+}
