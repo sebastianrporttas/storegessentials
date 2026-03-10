@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Ropa | StoregEssentials</title>
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- FONDO -->
+    <div class="fondo-galeria"></div>
+
+    <!-- HEADER -->
+    <header>
+        <h1>StoregEssentials</h1>
+        <p>Catálogo oficial de prendas disponibles</p>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio">
+            <h2>Bienvenido a StoregEssentials</h2>
+            <p>
+                Explora nuestro catálogo de ropa fresca ideal para clima cálido.
+                Comparte este enlace para que otros conozcan nuestros productos.
+            </p>
+        </section>
+
+        <!-- CATÁLOGO -->
+        <section id="catalogo">
+            <h2>Catálogo de Prendas</h2>
+
+            <!-- FILTROS -->
+            <div class="filtros">
+                <h3>Filtrar por categoría</h3>
+                <ul>
+                    <li data-categoria="Batolas">Batolas</li>
+                    <li data-categoria="Pantalones">Pantalones</li>
+                    <li data-categoria="Blusas">Blusas</li>
+                    <li data-categoria="Conjunto">Conjunto</li>
+                </ul>
+            </div>
+
+            <!-- PRODUCTOS -->
+            <div class="productos">
+                <h3>Modelos Disponibles</h3>
+
+                <!-- PRODUCTO -->
+                <article data-categoria="Batolas">
+                    <div class="img-producto img-Tesoro">
+                        <img src="/Productos/bata-tesoro-amarilla.jpeg" alt="Batola Tesoro">
+                    </div>
+                    <h4>Batola Tesoro</h4>
+                    <p><strong>Tallas:</strong> Talla única</p>
+                    <p><strong>Colores:</strong> Amarillo, Negro, Rojo, Blanco, Azul</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <article data-categoria="Pantalones">
+                    <div class="img-producto img-Zaif">
+                        <img src="/Productos/pantalon-zaif.jpeg" alt="Pantalón Zaif">
+                    </div>
+                    <h4>Pantalón Zaif</h4>
+                    <p><strong>Tallas:</strong> 28, 30, 32, 34</p>
+                    <p><strong>Precio:</strong> $89.900 COP</p>
+                </article>
+
+                <article data-categoria="Batolas">
+                    <div class="img-producto img-Mariposa">
+                        <img src="/Productos/bestido-mariposa-blanco.jpeg" alt="Batola Mariposa">
+                    </div>
+                    <h4>Batola Mariposa</h4>
+                    <p><strong>Tallas:</strong> Talla única</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Somos una marca pensada para el clima cálido de las costas colombianas,
+                ofreciendo prendas frescas, cómodas y con estilo.
+            </p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li>
+                    <a href="https://wa.me/573132331568?text=Hola%20quiero%20saber%20mas%20de%20los%20productos" target="_blank">
+                        WhatsApp: +57 313 233 1568
+                    </a>
+                </li>
+                <li>Email: contacto@tumarca.com</li>
+                <li>
+                    <a href="https://www.instagram.com/storgessentials" target="_blank">
+                        Instagram: @storegEssentials
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StoregEssentials. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
