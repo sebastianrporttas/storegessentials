@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo de Ropa | StoregEssentials</title>
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+
+    <!-- FONDO -->
+    <div class="fondo-galeria"></div>
+
+    <!-- HEADER -->
+    <header>
+        <h1>StoregEssentials</h1>
+        <p>Catálogo oficial de prendas disponibles</p>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio">
+            <h2>Bienvenido a StoregEssentials</h2>
+            <p>
+                Explora nuestro catálogo de ropa fresca ideal para clima cálido.
+            </p>
+        </section>
+
+        <!-- CATÁLOGO -->
+        <section id="catalogo">
+            <h2>Catálogo de Prendas</h2>
+                      <div class="filtros">
+                       <h3>Filtrar por categoría</h3>
+
+                        <div class="dropdown">
+                          <button class="dropdown-btn">Batolas ▾</button>
+
+                               <ul class="dropdown-lista">
+                                  <li data-target="tesoro">Batola Tesoro</li>
+                                  <li data-target="melodia">Batola Melodía</li>
+                                  <li data-target="euforia">Batola Euforia</li>
+                                  <li data-target="palmera">Batola Palmera</li>
+                                  <li data-target="raices">Batola Raíces</li>
+                                  <li data-target="africa">Batola África</li>
+                                  <li data-target="corazon">Batola Corazón</li>
+                                  <li data-target="girasol">Batola Girasol</li>
+                                  <li data-target="guajira">Batola Guajira</li>
+                              </ul>
+                       </div>
+
+            <div class="productos">
+                <h3>Modelos Disponibles</h3>
+
+                <!-- PRODUCTO 1 -->
+                <article 
+                    id="tesoro"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola tesoro/bata-tesoro-amarilla.webp,
+                                   Productos/batolas/Batola tesoro/bata-tesoro-azul.webp,
+                                   Productos/batolas/Batola tesoro/bata-tesoro-blanca.webp,
+                                   Productos/batolas/Batola tesoro/bata-tesoro-negra.webp,
+                                   Productos/batolas/Batola tesoro/bata-tesoro-roja.webp  ">
+
+                    <div class="img-producto img-Tesoro">
+                        <img src="Productos/batolas/Batola tesoro/bata-tesoro-amarilla.webp" alt="Batola Tesoro" loading="lazy">
+                    </div>
+
+                    <h4>Batola Tesoro</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 2 -->
+                <article 
+                    id="melodia"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola melodia/batola-melodia-roja.webp, 
+                                   Productos/batolas/Batola melodia/batola-melodia-verde.webp ">
+
+                    <div class="img-producto img-Melodia">
+                        <img src="Productos/batolas/Batola melodia/batola-melodia-roja.webp" alt="Batola Melodia" loading="lazy">
+                    </div>
+
+                    <h4>Batola Melodia</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 3 -->
+                <article 
+                    id="euforia"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola euforia/batola-euforia-azul.webp, 
+                                   Productos/batolas/Batola euforia/batola-euforia-amarilla.webp,
+                                   Productos/batolas/Batola euforia/batola-euforia-blanca.webp,
+                                   Productos/batolas/Batola euforia/batola-euforia-negra.webp,
+                                   Productos/batolas/Batola euforia/batola-euforia-rosa.webp ">
+
+                    <div class="img-producto img-Euforia">
+                        <img src="Productos/batolas/Batola euforia/batola-euforia-azul.webp" alt="Batola Euforia" loading="lazy">
+                    </div>
+
+                    <h4>Batola Euforia</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 4 -->
+
+                <article 
+                    id="palmera"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola palmera/batola-palmera-blanca.webp,
+                                   Productos/batolas/Batola palmera/batola-palmera-azul.webp,
+                                   Productos/batolas/Batola palmera/batola-palmera-azul-claro.webp,
+                                   Productos/batolas/Batola palmera/batola-palmera-negra.webp,
+                                   Productos/batolas/Batola palmera/batola-palmera-roja.webp  ">
+
+                    <div class="img-producto img-Palmera">
+                        <img src="Productos/batolas/Batola palmera/batola-palmera-blanca.webp" alt="Batola Palmera" loading="lazy">
+                    </div>
+
+                    <h4>Batola Palmera</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 5 -->
+
+                <article 
+                    id="raices"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola raices/batola-raices-1.webp,
+                                   Productos/batolas/Batola raices/batola-raices-2.webp ">
+
+                    <div class="img-producto img-Raices">
+                        <img src="Productos/batolas/Batola raices/batola-raices-1.webp" alt="Batola Raices" loading="lazy">
+                    </div>
+
+                    <h4>Batola Raices</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 6 -->
+
+                <article 
+                    id="africa"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola africa/batola-africa-naranja.webp,
+                                   Productos/batolas/Batola africa/batola-africa-amarilla.webp,
+                                   Productos/batolas/Batola africa/batola-africa-azul.webp, 
+                                   Productos/batolas/Batola africa/batola-africa-blanca.webp,
+                                   Productos/batolas/Batola africa/batola-africa-negra.webp,
+                                   Productos/batolas/Batola africa/batola-africa-roja.webp ">
+
+                    <div class="img-producto img-Africa">
+                        <img src="Productos/batolas/Batola africa/batola-africa-naranja.webp" alt="Batola Africa" loading="lazy">
+                    </div>
+
+                    <h4>Batola Africa</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 7 -->
+
+                <article 
+                    id="corazon"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola corazon/batola-corazon-verde.webp,
+                                   Productos/batolas/Batola corazon/batola-corazon-rosa.webp,
+                                   Productos/batolas/Batola corazon/batola-corazon-azul.webp,
+                                   Productos/batolas/Batola corazon/batola-corazon-naranja.webp,
+                                   Productos/batolas/Batola corazon/batola-corazon-roja.webp  ">
+
+                    <div class="img-producto img-Corazon">
+                        <img src="Productos/batolas/Batola corazon/batola-corazon-verde.webp" alt="Batola Corazon" loading="lazy">
+                    </div>
+
+                    <h4>Batola Corazon</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 8 -->
+
+                <article 
+                    id="girasol"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola girasol/batola-girasol-rosa.webp,
+                                   Productos/batolas/Batola girasol/batola-girasol-roja.webp,
+                                   Productos/batolas/Batola girasol/batola-girasol-negra.webp,
+                                   Productos/batolas/Batola girasol/batola-girasol-naranja.webp,
+                                   Productos/batolas/Batola girasol/batola-girasol-azul.webp  ">
+
+                    <div class="img-producto img-Girasol">
+                        <img src="Productos/batolas/Batola girasol/batola-girasol-rosa.webp" alt="Batola Girasol" loading="lazy">
+                    </div>
+
+                    <h4>Batola Girasol</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+                <!-- PRODUCTO 9 -->
+
+                <article 
+                    id="guajira"
+                    data-categoria="Batolas"
+                    data-imagenes="Productos/batolas/Batola guajira/batola-guajira-morada.webp,
+                                   Productos/batolas/Batola guajira/batola-guajira-azul.webp,
+                                   Productos/batolas/Batola guajira/batola-guajira-naranja.webp,
+                                   Productos/batolas/Batola guajira/batola-guajira-roja.webp ">
+
+                    <div class="img-producto img-Guajira"> 
+                        <img src="Productos/batolas/Batola guajira/batola-guajira-morada.webp" alt="Batola Guajira" loading="lazy">
+                    </div>
+
+                    <h4>Batola Guajira</h4>
+                    <p><strong>Tallas:</strong> S, M, L, XL</p>
+                    <p><strong>Precio:</strong> $65.000 COP</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SOBRE NOSOTROS -->
+        <section id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>
+                Marca pensada para el clima cálido de las costas colombianas.
+            </p>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <ul>
+                <li>
+                    <a href="https://wa.me/573132331568?text=Hola%20quiero%20saber%20mas%20de%20los%20productos" target="_blank">
+                        WhatsApp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/storegessentials" target="_blank">
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 StoregEssentials</p>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-galeria" id="modalGaleria">
+        <span class="cerrar">&times;</span>
+        <img class="imagen-grande" id="imagenActiva">
+        <div class="miniaturas" id="miniaturas"></div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
